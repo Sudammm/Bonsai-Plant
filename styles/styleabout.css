@@ -1,0 +1,410 @@
+
+*{
+	/* For all we give margin and padding as zero and box sizing as border-box*/
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+	/* This is like the main section which includes all components of the website*/
+	background: no-repeat;
+	background-size: cover;
+	height: 100;
+}
+
+.navbar{
+    height: 8%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: wheat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Gives shadow to the box */
+    background-size:cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar p{
+    /* Styling for the paragraph section of the navbar*/
+    font-size: 37px;
+    margin-left: -12%;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.navbar img
+{
+    /* Styling for logo in the navbar*/
+    width:11%;
+    margin-left:2%;
+}
+.navbar ul{
+    /* Styling for the ul tag of navbar*/
+    display: flex;
+
+}
+.navbar ul li{
+    /* Styling for li section inside ul of navbar*/
+    list-style: none;
+    margin: 0px 15px;
+    line-height: 80px;
+}
+.navbar ul li a{
+    /* Styling for anchor tags og the navbar*/
+    font-size: 20px;
+    font-weight:500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    color:black;
+}
+.navbar ul li a:hover{
+    /* Hover effect on the anchor tags*/
+    background: rgb(226, 152, 152);
+    border-radius: 10px;
+}
+/* Dropdown Button */
+
+.nav5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: wheat;
+    color: black;
+    padding: 6px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+  /* Dropdown button on hover & focus */
+  .nav5:hover{
+    background: rgb(226, 152, 152);
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+ }
+
+   /* The container <div> - needed to position the dropdown content */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+
+  .content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 201px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+
+  /* Links inside the dropdown */
+.content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+   /* Change color of dropdown links on hover */
+
+  .content a:hover {background-color: #ddd;}
+
+  
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+  .show {display:block;}
+.topic p{
+	/* Styling for the topic class*/
+	font-size: 78px;
+    margin-top: 109px;
+    margin-left: 90px;
+    color: #179d17;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.topic .p2{
+	/* Stylin for p2 class inside topic class*/
+	font-size: 28px;
+    margin-top: 16px;
+    color: black;
+}
+.image{
+	/* Styling for image class*/
+	width: 426px;
+    float: right;
+    margin-top: -371px;
+    margin-right: 43px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 18px
+}
+.image img{
+	/* Styling for image inside image class*/
+	float: right;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border: none;
+    height: 352px;
+    width: 424px;
+	transition:0.4s ease-in-out;
+}
+.image img:hover{
+	/* Hover effect on image*/
+	transform:scale(1.25);  /* Resizes the element on 2D plane*/
+	cursor:pointer;
+}
+.desc h2{
+	/* Styling for h2 tag inside desc class*/
+	margin-left: 91px;
+    margin-top: 98px;
+    font-size: 65px;
+    font-family: verdana;
+	font-style: italic;
+	text-align: center;
+    color: rgb(26, 23, 23);
+}
+.home{
+	/* Styling for home div*/
+	height:417px;
+	width: 1097px;
+    margin-left: 209px;
+    margin-top: 65px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+	border-radius: 10px;
+}
+.home img{
+	/* Styling for image inside home class*/
+	height: 417px;
+    width: 428px;
+	border-radius: 10px;
+	transition: 0.4s ease-in-out;
+}
+.home img:hover{
+	/* Hover effect on the image*/
+	transform:scale(1.25);
+	cursor:pointer;
+}
+.home h3{
+	/* Styling for h3 tag inside home class*/
+	float: right;
+    margin-right: 509px;
+    margin-top: 48px;
+    font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.home p{
+	/* Styling for paragraph tag inside home class*/
+	float: right;
+    margin-top: -296px;
+    margin-right: 85px;
+    font-size: 23px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 32px;
+    letter-spacing: 0.22px;
+}
+.home button{
+	/* Styling for button inside home class*/
+	float: right;
+    margin-right: 478px;
+    margin-top: -102px;
+    font-size: 26px;
+    padding: 9px 29px;
+    background-color:  #4ab44a;
+    color: white;
+    border-radius: 8px;
+	border:none;
+}
+.home button a{
+	/* Styling for a tag inside the button*/
+	text-decoration: none;
+    color: white;
+}
+.home button:hover{
+	/* Hover effect on the button*/
+	cursor: pointer;
+	background-color:#0e7f0e;
+}
+.main{
+    display: flex;
+    height:1831px;
+	margin: 65px 19px 0px 19px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main .pic{
+    flex: 25%;
+    margin-left: 24px;
+    height: 30%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #F8E4CC;
+}
+.main .pic img{
+    margin-left: 71px;
+    margin-top: 34px;
+    border-radius: 50%;
+	width: 120px;
+	height: 109px;
+}
+.main .pic h2{
+    margin-left: 29px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: arial;
+}
+.main .pic .contact{
+    margin-left: 28px;
+    margin-top: 28px;
+}
+.main .pic .contact a{
+    text-decoration: none;
+    font-size:20px;
+    font-family: sans-serif;
+    color:rgb(212, 122, 58);
+}
+.main .desc{
+    flex:75%;
+    margin-left: 82px;
+    margin-right: 32px;
+    height:100%;
+}
+.main .desc .card{
+   
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding-top: 38px;
+    padding-left: 58px;
+}
+.main .desc .card h1{
+    font-size: 38px;
+}
+.main .desc .card p{
+    margin-top: 25px;
+    font-size: 23px;
+    line-height: 35px;
+}
+.main .desc .card .tech{
+    margin-top:45px;
+}
+ table
+{
+	line-height: 34px;
+    font-size: 22px;
+    margin-top: 2%;
+}
+.main .contact a img{
+	height: 56px;
+	width: 68px;
+	margin: -5px 0px 0px -1px;
+	padding-right: 12px;
+	border-radius: 35%;
+}
+
+
+
+/* Dropdown Button */
+ 
+  .dd{
+	font-size: 15px;
+  }
+  .nav1{
+	font-size: 20px;
+  }
+  .main .pic .para{
+	padding: 10px 10px 10px 20px;
+  }
+  table,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+  th,td{
+	background-color: wheat;
+  }
+
+  footer{
+	/* Styling for footer tag */
+	background-color:#26272b;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+	margin-top:67px;
+	height:593px;
+}
+footer .abt h3{
+	/* Styling for the about class section of the footer*/
+	margin-left: 177px;
+    font-size: 40px;
+    padding-top: 22px;
+	color:#fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+footer .abt p{
+	/* Styling fir the paragraph section of the about class inside the footer*/
+	font-size: 21px;
+    margin-top: 10px;
+    margin-left: 177px;
+	line-height:27px;
+	color:#737373;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight:bold;
+}
+footer .qlinks h3{
+	/* Styling for the qlinks class inside footer*/
+	float: right;
+    margin-right: 197px;
+    margin-top: -164px;
+    font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.footer .qlinks ul{
+	/* Styling for the ul section of qlinks class inside footer*/
+	float: right;
+    margin-right: 15%;
+    line-height: 51px;
+    margin-top: -101px;
+    list-style: none;
+    font-size: 21px;
+}
+.footer .qlinks ul li a{
+	/* Styling for the anchor tags inside the qlink class*/
+	text-decoration: none;
+	color:#737373;
+	font-weight:bold;
+	font-size:31px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	transition:0.4s ease-in-out;
+}
+.footer .qlinks ul li a:hover{
+	/* Giving hover effect to the anchor tag*/
+	color:rgb(221, 149, 16);
+}
+.footer .join{
+	margin-top: 47px;
+    margin-left: 170px;
+}
+.footer .join h3{
+	font-size: 40px;
+    color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.footer button:hover{
+	/* Hover effect on Join Us button*/
+	background-color:rgb(221, 149, 16);
+	cursor: pointer;
+}
+.footer .copyright p{
+	text-align: center;
+    font-size: 28px;
+    margin-top: 61px;
+	color:#737373;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+

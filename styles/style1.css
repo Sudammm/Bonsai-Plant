@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    display: flex;
+    height:200vh;
+}
+.main .pic{
+    flex: 25%;
+    margin-left: 24px;
+    margin-top: 35px;
+    height: 63vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #d8e2ca;
+}
+.main .pic img{
+    margin-left: 30px;
+    margin-top: 34px;
+    border-radius: 50%;
+}
+.main .pic h2{
+    margin-left: 28px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: arial;
+}
+.main .pic .contact{
+    margin-left: 28px;
+    margin-top: 60px;
+}
+.main .pic .contact a{
+    text-decoration: none;
+    font-size:20px;
+    font-family: sans-serif;
+    color:rgb(212, 122, 58);
+}
+.main .desc{
+    flex:75%;
+    margin-left: 82px;
+    margin-right: 32px;
+    margin-top: 35px;
+    height:100%;
+}
+.main .desc .card{
+   
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding-top: 38px;
+    padding-left: 58px;
+}
+.main .desc .card h1{
+    font-size: 38px;
+}
+.main .desc .card p{
+    margin-top: 50px;
+    font-size: 23px;
+    line-height: 40px;
+}
+.main .desc .card .tech{
+    margin-top:45px;
+}

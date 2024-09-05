@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bonsai1.css">
+    <title>Product 3</title>
+</head>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        
+    }
+    
+    body .main{
+        background-color: rgb(206, 199, 199);
+        width: 75%;
+        height:500px;
+        margin-top: 6%;
+        margin-left: 7%;
+        border-radius: 10px;
+    }
+    .main img{
+        width:37%;
+        height:500px;
+    }
+    .main .name
+    {
+        float: right;
+        margin-top: -43%;
+        margin-right: 19%;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .main .descri
+    {
+        float: right;
+        font-family:'Lucida Sans', 'Lucida Sans Regular';
+        margin-top: -37%;
+        margin-right: 5%;
+        font-size: 19px;
+        line-height:22px;
+    }
+    .descri .priceof
+    {
+        line-height:28px;
+    }
+    .main .submit
+    {
+        float: right;
+        margin-top:-7%;
+        margin-right: 52%
+    }
+    .submit button
+    {
+        font-size: 22px;
+        padding: 8%;
+        color:white;
+        background-color:  #4ab44a;
+        border:none;
+        border-radius:8px;
+    }
+    .submit button:hover
+    {
+        background-color:#0e7f0e;
+        cursor:pointer;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <img src="../images/logo.jpg" alt="Bonsai Logo">
+        <p class="logo">Bonsai Territory</p>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="Func()" class="nav5" style="font-weight:500">About Us</button>
+                    <div id="elements" class="content">
+                        <a href="himanshu.html" class="dd">Himanshu Joshi</a>
+						<a href="pratikshya.html" class="dd">Pratikshya Chand</a>
+						<a href="yasna.html" class="dd">Yasna Dangol</a>
+						<a href="sudham.html" class="dd">Sudham Pant</a>
+						<a href="rujen.html" class="dd">Rujen Maharjan</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Research</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="img">
+            <img src="../images/plant3.jpg" alt="pic3">
+        </div>
+        <div class="name" style="margin-right:29%;">
+            <h2>Rock Garden Holly</h2>
+        </div>
+        <div class="descri" style="margin-right:5%;">
+            <p>Rock Garden Holly is a versatile dwarf holly for all seasons. This <br>female holly has bright red 
+            berries and shiny, dark green foliage. <br> It is easy to grow  in medium moisture soil that drains well.</p><br>
+
+            <p class="growth"><b style="font-family: Arial, Helvetica, sans-serif;">Growth Habit: </b>Globe Shaped</p> <br>
+            <p class="ship"><b style="font-family: Arial, Helvetica, sans-serif;">Shipping Size: </b>
+                Dwarf plant ships in 4" pot.</p> <br>
+            <p class="ship"><b style="font-family: Arial, Helvetica, sans-serif;">Growth Rate: </b>1-2" per year.</p> <br>
+            <div class="priceof">
+                <p class="p3"><b style="font-family: Arial, Helvetica, sans-serif;">Actual Price:</b> 1650</p>
+                <p class="p3"><b style="font-family: Arial, Helvetica, sans-serif;">Discounted Price:</b> 350</p>
+                <p class="p3"><b style="font-family: Arial, Helvetica, sans-serif;">Final Price:</b> 1300</p>
+            </div>
+        </div>
+        <div class="submit" style="margin-right:51%;">
+            <button type="submit" onclick="purch()">Purchase</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!--Footer section of the webpage-->
+        <div class="abt">
+            <h3>About</h3>
+            <p>This is the Bonsai plants website which contains  <br> different plant products, their description,
+                their <br> actual price and discounted price as well. So, get <br> your items quickly and save your
+                 money.
+            </p>
+        </div>
+
+        <div class="qlinks">
+            <!--Quick links in the footer section-->
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="">Research</a></li>
+				<li><a href="himanshu.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div> 
+        
+        <form class="join" name="joinus" onsubmit="validateForm()">
+            <!--Join section of the footer-->
+            <h3>Join us</h3>
+            <input type="text" name="email" placeholder="Your Email..." style="margin-top:26px; font-size:22px;
+            padding:3px 6px; width:358px"> <br> <br>
+            <input type="text" name="password" placeholder="Your Password..." style="font-size:22px;
+            padding:3px 6px; width:358px;"> <br> <br>
+            <button type="submit" class="btn" style="font-size:26px; padding:3px 11px; transition: 0.4s ease-in-out;">
+                Join Us</button>
+            </form>
+
+            <div class="copyright">
+                <p>..................................................................... <span>&copy;</span> 2023 
+                    Bonsai Territory.............................................................
+                </p>
+            </div>
+        </footer>
+</body>
+<script>
+
+function validateForm()
+	{
+		// Creating a function to validate the form
+		var email=document.forms["joinus"]["email"].value;  //Getting the value of email
+		var password=document.forms["joinus"]["password"].value;   //Getting the value of password
+
+		if(email=="" || password=="")   //Checking the conditon whether the form is filled fully or not
+		{
+			alert("Form is not filled properly. Please fill the form.");
+		}
+		else
+		{
+			alert("Thank you for joining us.");
+		}
+	}
+
+   function purch()
+   {
+    /* When someone clicks on purchase then it runs this function*/
+    alert("The item is sucessfully purchased. Thank you")
+   }
+
+   function Func() {
+
+document.getElementById("elements").classList.toggle("show");
+
+}
+
+
+
+// Close the dropdown menu if the user clicks outside of it
+
+window.onclick = function(event) {
+if (!event.target.matches('.nav5')) {
+var dropdowns = document.getElementsByClassName("content");
+var i;
+
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+
+if (openDropdown.classList.contains('show')) {
+  openDropdown.classList.remove('show');
+
+}
+}
+}
+}
+</script>
+</html>

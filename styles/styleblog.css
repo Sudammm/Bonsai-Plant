@@ -1,0 +1,172 @@
+/* . is for class & # is for ID's */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Pacifico&display=swap');
+body 
+{
+	/*background-color:  	#101010;*/
+	background-color: white;
+}
+/* Navbar Code Below */
+
+.navbar{
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: wheat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Gives shadow to the box */
+    background-size:cover;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar p{
+    font-size: 37px;
+	margin-left: 3%;
+}
+.navbar ul{
+    /* Styling for the ul tag of navbar*/
+    display: flex;
+
+}
+.navbar ul li{
+    /* Styling for li section inside ul of navbar*/
+    list-style: none;
+    margin: 0px 8px;
+    line-height: 80px;
+}
+.navbar .btn:hover{
+    /* Hover effect on the button*/
+    cursor: pointer;
+    background-color: rgb(96, 226, 96);
+    color:white;
+}
+.navbar ul li a{
+    /* Styling for anchor tags og the navbar*/
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    color:black;
+}
+.navbar ul li a:hover{
+    /* Hover effect on the anchor tags*/
+    background: rgb(226, 152, 152);
+    border-radius: 10px;
+}
+/* Landing Page */
+
+.landing-headline 
+{
+    margin-top: 8%;
+	font-size: 50px;
+	letter-spacing: -0.5px;
+	color: #ff615d;
+    font-family: "Lucida Console", "Courier New", monospace;
+	margin-left: 5%;
+
+}
+.landing-paragraph
+{
+	font-size: 35px;
+	letter-spacing: -0.5px;
+	color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+	width: 60%;
+	margin-left: 8%;
+}
+.landing-image
+{
+	width: 30%;
+    margin-top: 2%;
+	background-repeat: no-repeat;
+	display: block;
+}
+.landing-page 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+ .landing-button 
+ {
+    font-size: 26px;
+    padding: 9px 29px;
+    background-color:  #4ab44a;
+    color: black;
+    border-radius: 8px;
+    border:none;
+}
+
+.landing-button a
+{
+    text-decoration: none;
+    color: white;
+}
+.landing-button:hover
+{
+	cursor: pointer;
+    background-color:#0e7f0e;
+}
+/* Customer Review Card */
+
+.customer-review-heading 
+{
+	font-size: 50px;
+	letter-spacing: 0.5px;
+	color: #0e7f0e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 60%;
+	margin-left: 8%;
+}
+
+.customer-review
+{
+	color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: flex;
+	flex-direction: row;
+	margin-left: 5%;
+	gap: 2%;
+}
+
+.card-content 
+{
+	width: 75%;
+	padding-left: 10%;
+}
+.card-content h3
+{
+	font-size: 30px;
+}
+.card-content p
+{
+	width: 80%;
+    font-size: large;
+}
+.customer-review img
+{
+    margin-left: 8%;
+	width: 70%;
+    border-radius: 9%;
+    box-shadow: 1px 20px 20px 5px rgba(0, 0, 0, 0.2), 0 10px 50px 0 rgba(0, 0, 0, 0.19);  /* Gives shadow to the box */
+}
+.card-button-tag
+{
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px 15px;
+    background-color:  orange;
+    color: black;
+    border-radius: 20px;
+    border:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+footer
+{
+	margin-top: 5%;
+}

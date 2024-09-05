@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="just basic html">
+	<meta name="keyword" content="html,head,meta,seantic">
+	<meta name="author" content="Himanshu">
+	<link rel="stylesheet" href="../css/stylecontact.css">
+    <script src="../javascript/contactscript.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../images/logo.jpg" alt="Bonsai Logo">
+        <p class="logo">Bonsai Territory</p>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="Func()" class="nav5" style="font-weight:500">About Us</button>
+                    <div id="elements" class="content">
+                        <a href="himanshu.html" class="dd">Himanshu Joshi</a>
+						<a href="pratikshya.html" class="dd">Pratikshya Chand</a>
+						<a href="yasna.html" class="dd">Yasna Dangol</a>
+						<a href="sudham.html" class="dd">Sudham Pant</a>
+						<a href="rujen.html" class="dd">Rujen Maharjan</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Research</a></li>
+        </ul>
+    </nav>
+
+        <div class="msgbox" id="errbox">
+            <h1>Error !!</h1>
+            <p>The form is not filled properly. <br>Please fill the form.</p>
+            <button id="hideerr" onclick="hideerr()">&#215;</button>
+        </div>
+
+        <div class="succbox" id="succbox">
+            <h1>Thank You !!</h1>
+            <p>Thank you for filling the form and for <br>your feedback </p>
+            <button id="hideerr" onclick="hideerrsucc()">&#215;</button>
+        </div>
+
+        <div class="mainbox">
+            <table>
+                <form name="Feedback" id="fm">
+                    <h1 class="h1">Feedback Form</h1>
+                    <tr>
+                        <td>
+                            <label for="fname">First Name</label> <br>
+                            <input type="text" id="fname" name="fname" class="form">
+                        </td>
+
+                        <td>
+                            <label for="lname">Last Name</label> <br>
+                            <input type="text" id="lname" name="lname" class="form" style="width:84%;">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="age">Age</label> <br>
+                            <input type="number" id="age" name="age" class="form">
+
+                        </td>
+
+                        <td>
+                            <label for="gender">Gender</label> <br>
+                            <input type="radio" id="gender"name="gender" value="male" checked><span>Male</span>
+                            <input type="radio" id="gender"  name="gender" value="female" style="margin-left:12%;">
+                            <span>Female</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label> <br>
+                            <input type="email" id="email_feed" name="email_feed" class="form">
+                        </td>
+
+                        <td>
+                            <label for="phone">Phone Number:</label> <br>
+                            <input type="number" id="phone" name="phone" class="form" style="width:84%;"> 
+                        </td>
+ 
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Message</label> <br>
+                            <textarea name="txtarea" id="message" name="message" 
+                            cols="50" rows="8" style="width:152%; font-size:20px; font-family:arial;"></textarea>
+   
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                           <button type="button" class="btnn" id="btnnn" onclick="feedback()">Submit</button>
+                        </td>
+                    </tr>
+
+                </form>
+            </table>
+        </div>
+
+    <footer class="footer">
+        <!--Footer section of the webpage-->
+        <div class="abt">
+            <h3>About</h3>
+            <p>This is the Bonsai plants website which contains  <br> different plant products, their description,
+                their <br> actual price and discounted price as well. So, get <br> your items quickly and save your
+                 money.
+            </p>
+        </div>
+
+        <div class="qlinks">
+            <!--Quick links in the footer section-->
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="">Research</a></li>
+				<li><a href="himanshu.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div> 
+        
+        <form class="join" name="joinus" onsubmit="validateForm()">
+            <!--Join section of the footer-->
+            <h3>Join us</h3>
+            <input type="text" name="email" placeholder="Your Email..." style="margin-top:26px; font-size:22px;
+            padding:3px 6px; width:358px"> <br> <br>
+            <input type="text" name="password" placeholder="Your Password..." style="font-size:22px;
+            padding:3px 6px; width:358px;"> <br> <br>
+            <button type="submit" class="btn" style="font-size:26px; padding:3px 11px; transition: 0.4s ease-in-out;">
+                Join Us</button>
+            </form>
+
+            <div class="copyright">
+                <p>..................................................................... <span>&copy;</span> 2023 
+                    Bonsai Territory.............................................................
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
